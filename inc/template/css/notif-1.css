@@ -121,9 +121,19 @@ div.n-b-w-f-body .n-b-w-f-counter .n-b-w-f-str {
 
 .n-b-w-f-num-03 {
   background-color: #35b6f9;
+  justify-content: center !important;
+  align-items: center;
 }
-.n-b-w-f-num-03 > .n-b-w-f-center > div.n-b-w-f-title {
-  text-align: center;
+.n-b-w-f-num-03 > .n-b-w-f-center {
+  display: flex;
+  align-items: center;
+}
+.n-b-w-f-num-03 > .n-b-w-f-center .n-b-w-f-title {
+  color: #FFFFFF;
+}
+.n-b-w-f-num-03 > .n-b-w-f-center > a > img {
+  width: 60px;
+  margin: 0 10px;
 }
 
 /*# sourceMappingURL=notif-1.css.map */

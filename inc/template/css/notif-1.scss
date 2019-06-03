@@ -99,10 +99,23 @@ div.n-b-w-f-body {
 
 .n-b-w-f-num-03 {
   background-color: #35b6f9;
+  justify-content: center !important;
+  align-items: center;
   >.n-b-w-f-center{
+    display: flex;
+    align-items: center;
+
+    .n-b-w-f-title{
+      color: #FFFFFF;
+    }
+    >a{
+      >img{
+        width: 60px;
+        margin: 0 10px;
+      }
+    }
 
     >div.n-b-w-f-title{
-      text-align: center;
     }
   }
 }

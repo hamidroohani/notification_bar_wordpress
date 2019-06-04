@@ -14,6 +14,7 @@ div.n-b-w-f-body {
   .n-b-w-f-title {
     font-size: 17px;
     font-weight: 600;
+    padding-right: 20px;
   }
 
   > div.n-b-w-f-right {
@@ -42,6 +43,7 @@ div.n-b-w-f-body {
         margin-right: 10px;
         border-radius: 12px;
         padding: 0 8px;
+        font-size: 16px;
       }
     }
 
@@ -58,6 +60,7 @@ div.n-b-w-f-body {
       border-radius: 4px;
       cursor: pointer;
       font-size: 16px;
+      line-height: 25px;
 
       &:hover {
         background: #90e743 !important;

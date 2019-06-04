@@ -54,6 +54,7 @@ div.n-b-w-f-body {
 div.n-b-w-f-body .n-b-w-f-title {
   font-size: 17px;
   font-weight: 600;
+  padding-right: 20px;
 }
 div.n-b-w-f-body > div.n-b-w-f-right {
   display: flex;
@@ -78,6 +79,7 @@ div.n-b-w-f-body > div.n-b-w-f-right .n-b-w-f-body-price .n-b-w-f-price {
   margin-right: 10px;
   border-radius: 12px;
   padding: 0 8px;
+  font-size: 16px;
 }
 div.n-b-w-f-body > div.n-b-w-f-left {
   padding-left: 15px;
@@ -90,6 +92,7 @@ div.n-b-w-f-body > div.n-b-w-f-left .n-b-w-f-button {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  line-height: 25px;
 }
 div.n-b-w-f-body > div.n-b-w-f-left .n-b-w-f-button:hover {
   background: #90e743 !important;

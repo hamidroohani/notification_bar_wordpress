@@ -8,23 +8,27 @@ jQuery(document).ready(function ($) {
         if ($(this).val() === "introduce_product") {
             $(".n-b-w-f-num-02").hide().removeClass("selected-n-b-w");
             $(".n-b-w-f-num-03").hide().removeClass("selected-n-b-w");
+            $(".n-b-w-f-num-04").hide().removeClass("selected-n-b-w");
             $(".n-b-w-f-num-01").show().addClass("selected-n-b-w");
 
             $(".n-b-w-title-product").show();
             $(".n-b-w-percent").show();
             $(".n-b-w-social").hide();
+            $(".n-b-w-ok-cancel").hide();
             $(".n-b-w-price").show();
             $(".n-b-w-button-title").show();
         }
 
         if ($(this).val() === "day_counter") {
             $(".n-b-w-f-num-03").hide().removeClass("selected-n-b-w");
+            $(".n-b-w-f-num-04").hide().removeClass("selected-n-b-w");
             $(".n-b-w-f-num-01").hide().removeClass("selected-n-b-w");
             $(".n-b-w-f-num-02").show().addClass("selected-n-b-w");
 
             $(".n-b-w-title-product").show();
             $(".n-b-w-percent").hide();
             $(".n-b-w-price").hide();
+            $(".n-b-w-ok-cancel").hide();
             $(".n-b-w-social").hide();
             $(".n-b-w-button-title").show();
         }
@@ -32,10 +36,26 @@ jQuery(document).ready(function ($) {
         if ($(this).val() === "social") {
             $(".n-b-w-f-num-01").hide().removeClass("selected-n-b-w");
             $(".n-b-w-f-num-02").hide().removeClass("selected-n-b-w");
+            $(".n-b-w-f-num-04").hide().removeClass("selected-n-b-w");
             $(".n-b-w-f-num-03").show().addClass("selected-n-b-w");
 
             $(".n-b-w-title-product").show();
             $(".n-b-w-social").show();
+            $(".n-b-w-percent").hide();
+            $(".n-b-w-ok-cancel").hide();
+            $(".n-b-w-price").hide();
+            $(".n-b-w-button-title").hide();
+        }
+
+        if ($(this).val() === "notification") {
+            $(".n-b-w-f-num-01").hide().removeClass("selected-n-b-w");
+            $(".n-b-w-f-num-02").hide().removeClass("selected-n-b-w");
+            $(".n-b-w-f-num-03").hide().removeClass("selected-n-b-w");
+            $(".n-b-w-f-num-04").show().addClass("selected-n-b-w");
+
+            $(".n-b-w-title-product").show();
+            $(".n-b-w-ok-cancel").show();
+            $(".n-b-w-social").hide();
             $(".n-b-w-percent").hide();
             $(".n-b-w-price").hide();
             $(".n-b-w-button-title").hide();
@@ -50,13 +70,17 @@ jQuery(document).ready(function ($) {
         let inputValue = $("input[name=percent]").val();
         let selector = $(".selected-n-b-w");
         selector.find("#percent").text(inputValue);
-        if (!inputValue) selector.find("#percent-parent").hide();
+        if (!inputValue){
+            selector.find("#percent-parent").hide();
+        }else{
+            selector.find("#percent-parent").show();
+        }
     });
     body.on("keyup paste", "input[name=price]", () => {
         let inputValue = $("input[name=price]").val();
         let selector = $(".selected-n-b-w").find("#price");
         if (inputValue) {
-            selector.text(inputValue);
+            selector.text(inputValue).show();
         }else {
             selector.hide()
         }
@@ -65,7 +89,7 @@ jQuery(document).ready(function ($) {
         let inputValue = $("input[name=button-title]").val();
         let selector = $(".selected-n-b-w").find("#button-title");
         if (inputValue) {
-            selector.text(inputValue);
+            selector.text(inputValue).show();
         }else {
             selector.hide();
         }
@@ -116,4 +140,30 @@ jQuery(document).ready(function ($) {
             selector.hide();
         }
     });
+
+    body.on("keyup paste", "input[name=ok]", () => {
+        let inputValue = $("input[name=ok]").val();
+        let selector = $(".selected-n-b-w").find("#n-b-w-f-button-ok");
+        if (inputValue) {
+            selector.text(inputValue).show();
+        } else {
+            selector.hide();
+        }
+    });
+
+    body.on("keyup paste", "input[name=cancel]", () => {
+        let inputValue = $("input[name=cancel]").val();
+        let selector = $(".selected-n-b-w").find("#n-b-w-f-button-cancel");
+        if (inputValue) {
+            selector.text(inputValue).show();
+        } else {
+            selector.hide();
+        }
+    });
+
+    body.on("keyup paste", "input[name=width]", () => {
+        $(".selected-n-b-w").css("width",$("input[name=width]").val())
+    });
+
+
 });

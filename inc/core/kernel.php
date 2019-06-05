@@ -60,6 +60,18 @@ $plugin_path = plugin_dir_url(__FILE__);
                 <a href="" id="instagram" style="display: none"><img src="<?= $plugin_path ?>../template/images/instagram.svg" alt=""></a>
             </div>
         </div>
+        <div class="n-b-w-f-body n-b-w-f-num-04" style="display: none">
+            <div class="n-b-w-f-right">
+                <div class="n-b-w-f-body-img">
+                    <img src="<?= $plugin_path ?>../template/images/bell.jpg" id="blah" alt="">
+                </div>
+                <div class="n-b-w-f-title" id="title-product">آیا تمایل دارید از تخفیف های ما با خبر شوید</div>
+            </div>
+            <div class="n-b-w-f-left" id="ok-canel">
+                <span id="n-b-w-f-button-cancel">شاید بعدا</span>
+                <span id="n-b-w-f-button-ok">بله حتما</span>
+            </div>
+        </div>
     </div>
     <form action="">
 
@@ -67,6 +79,7 @@ $plugin_path = plugin_dir_url(__FILE__);
             <option value="introduce_product">معرفی محصول</option>
             <option value="day_counter">روز شمار</option>
             <option value="social">شبکه های اجتماعی</option>
+            <option value="notification">اطلاع رسانی</option>
         </select>
         <div class="n-b-w-title-product">
             <label for="">عنوان</label>
@@ -95,6 +108,18 @@ $plugin_path = plugin_dir_url(__FILE__);
             <input type="text" class="fenix-wp-fenix-form-control" placeholder="آی دی خود را وارد کنید" name="twitter"><br>
             <label for="">یوتیوب</label>
             <input type="text" class="fenix-wp-fenix-form-control" placeholder="آدرس کانال خود را وارد کنید" name="youtube"><br>
+        </div>
+        <div class="n-b-w-ok-cancel" style="display: none">
+            <label for="">تصویر</label>
+            <input type='file' onchange="readURL(this);" />
+            <label for="">متن تایید</label>
+            <input type="text"class="fenix-wp-fenix-form-control" name="ok"><br>
+            <label for="">متن لغو</label>
+            <input type="text" class="fenix-wp-fenix-form-control" name="cancel">
+        </div>
+        <div class="n-b-w-width">
+            <label for="">عرض نوار</label>
+            <input type="number" class="fenix-wp-fenix-form-control" name="width">
         </div>
     </form>
 </div>

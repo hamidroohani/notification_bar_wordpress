@@ -44,6 +44,7 @@ div.n-b-w-f-body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   direction: rtl;
   box-shadow: 0 0 3px #a8a5a5;
   height: 84px;
@@ -137,6 +138,37 @@ div.n-b-w-f-body .n-b-w-f-counter .n-b-w-f-str {
 .n-b-w-f-num-03 > .n-b-w-f-center > a > img {
   width: 60px;
   margin: 0 10px;
+}
+.n-b-w-f-num-04 > .n-b-w-f-right > .n-b-w-f-body-img {
+  border-left: 1px solid #b9b9b9;
+}
+.n-b-w-f-num-04 > .n-b-w-f-right > .n-b-w-f-body-img img {
+  width: 73px;
+}
+.n-b-w-f-num-04 > .n-b-w-f-left #n-b-w-f-button-cancel {
+  background: #f8f9fa !important;
+  color: #000 !important;
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 25px;
+}
+.n-b-w-f-num-04 > .n-b-w-f-left #n-b-w-f-button-cancel:hover {
+  background: #edeeef !important;
+}
+.n-b-w-f-num-04 > .n-b-w-f-left #n-b-w-f-button-ok {
+  background: #007bff !important;
+  color: #ffffff !important;
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 25px;
+  margin-right: 10px;
+}
+.n-b-w-f-num-04 > .n-b-w-f-left #n-b-w-f-button-ok:hover {
+  background: #08a4ff !important;
 }
 
 /*# sourceMappingURL=notif-1.css.map */

@@ -13,7 +13,7 @@ $plugin_path = plugin_dir_url(__FILE__);
             <div class="n-b-w-f-right">
                 <div class="n-b-w-f-body-per">
                     <span class="n-b-w-f-per" id="percent-parent"><span id="percent">50</span> % تخفیف</span>
-                    <img src="<?= $plugin_path ?>../template/images/2980.jpg" alt="">
+                    <img src="<?= $plugin_path ?>../template/images/2980.jpg" id="blah" alt="">
                 </div>
                 <div class="n-b-w-f-title" id="title-product">محصول دارای تخفیف</div>
                 <div class="n-b-w-f-body-price">
@@ -109,9 +109,11 @@ $plugin_path = plugin_dir_url(__FILE__);
             <label for="">یوتیوب</label>
             <input type="text" class="fenix-wp-fenix-form-control" placeholder="آدرس کانال خود را وارد کنید" name="youtube"><br>
         </div>
-        <div class="n-b-w-ok-cancel" style="display: none">
+        <div class="n-b-w-picture">
             <label for="">تصویر</label>
             <input type='file' onchange="readURL(this);" />
+        </div>
+        <div class="n-b-w-ok-cancel" style="display: none">
             <label for="">متن تایید</label>
             <input type="text"class="fenix-wp-fenix-form-control" name="ok"><br>
             <label for="">متن لغو</label>

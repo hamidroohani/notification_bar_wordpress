@@ -18,7 +18,7 @@ function notification_bar_wordpress_fenix()
             'id' => 'notification_bar_wordpress',
             'url' => '#',
             'textDomain' => 'notificationBarWordpress',
-            'icon' => plugins_url('/inc/template/img/youtube.svg', n_b_w_fenix_path),
+            'icon' => plugins_url('/inc/template/images/youtube.svg', n_b_w_fenix_path),
 
             // set path
             'path' => n_b_w_fenix_path,
@@ -43,7 +43,7 @@ function notification_bar_wordpress_fenix()
             // add script and style
             'admin-scripts' => [
                 "n-b-w-setting" => "/inc/template/js/index.js",
-                "2" => "/inc/template/js/editHandling.js",
+//                "2" => "/inc/template/js/editHandling.js",
             ],
             'admin-styles' => [
                 "/inc/template/css/notif-1.css",

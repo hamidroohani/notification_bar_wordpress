@@ -144,6 +144,7 @@ div.n-b-w-f-body .n-b-w-f-counter .n-b-w-f-str {
 }
 .n-b-w-f-num-04 > .n-b-w-f-right > .n-b-w-f-body-img img {
   width: 73px;
+  padding-left: 10px;
 }
 .n-b-w-f-num-04 > .n-b-w-f-left #n-b-w-f-button-cancel {
   background: #f8f9fa !important;

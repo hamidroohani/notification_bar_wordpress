@@ -13,6 +13,7 @@ jQuery(document).ready(function ($) {
 
             $(".n-b-w-title-product").show();
             $(".n-b-w-percent").show();
+            $(".n-b-w-picture").show();
             $(".n-b-w-social").hide();
             $(".n-b-w-ok-cancel").hide();
             $(".n-b-w-price").show();
@@ -27,6 +28,7 @@ jQuery(document).ready(function ($) {
 
             $(".n-b-w-title-product").show();
             $(".n-b-w-percent").hide();
+            $(".n-b-w-picture").hide();
             $(".n-b-w-price").hide();
             $(".n-b-w-ok-cancel").hide();
             $(".n-b-w-social").hide();
@@ -42,6 +44,7 @@ jQuery(document).ready(function ($) {
             $(".n-b-w-title-product").show();
             $(".n-b-w-social").show();
             $(".n-b-w-percent").hide();
+            $(".n-b-w-picture").hide();
             $(".n-b-w-ok-cancel").hide();
             $(".n-b-w-price").hide();
             $(".n-b-w-button-title").hide();
@@ -55,6 +58,7 @@ jQuery(document).ready(function ($) {
 
             $(".n-b-w-title-product").show();
             $(".n-b-w-ok-cancel").show();
+            $(".n-b-w-picture").show();
             $(".n-b-w-social").hide();
             $(".n-b-w-percent").hide();
             $(".n-b-w-price").hide();
@@ -167,3 +171,16 @@ jQuery(document).ready(function ($) {
 
 
 });
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        let reader = new FileReader();
+
+        reader.onload = function (e) {
+            jQuery(".selected-n-b-w").find('#blah')
+                .attr('src', e.target.result);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}

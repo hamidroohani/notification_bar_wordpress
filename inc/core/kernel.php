@@ -21,7 +21,7 @@ $plugin_path = plugin_dir_url(__FILE__);
                 </div>
             </div>
             <div class="n-b-w-f-left">
-                <span class="n-b-w-f-button" id="button-title">خرید محصول</span>
+                <a href="#" class="n-b-w-f-button" id="button-title">خرید محصول</a>
             </div>
         </div>
         <div class="n-b-w-f-body n-b-w-f-num-02" style="display: none">
@@ -69,7 +69,7 @@ $plugin_path = plugin_dir_url(__FILE__);
             </div>
             <div class="n-b-w-f-left" id="ok-canel">
                 <span id="n-b-w-f-button-cancel">شاید بعدا</span>
-                <span id="n-b-w-f-button-ok">بله حتما</span>
+                <a href="#" id="n-b-w-f-button-ok">بله حتما</a>
             </div>
         </div>
     </div>
@@ -95,7 +95,9 @@ $plugin_path = plugin_dir_url(__FILE__);
         </div>
         <div class="n-b-w-button-title">
             <label for="">متن دکمه</label>
-            <input type="text" class="fenix-wp-fenix-form-control" name="button-title">
+            <input type="text" class="fenix-wp-fenix-form-control" name="button-title"><br>
+            <label for="">لینک دکمه</label>
+            <input type="text" class="fenix-wp-fenix-form-control" name="button-link">
         </div>
         <div class="n-b-w-social" style="display: none">
             <label for="">تلگرام</label>
@@ -116,6 +118,8 @@ $plugin_path = plugin_dir_url(__FILE__);
         <div class="n-b-w-ok-cancel" style="display: none">
             <label for="">متن تایید</label>
             <input type="text"class="fenix-wp-fenix-form-control" name="ok"><br>
+            <label for="">لینک تایید</label>
+            <input type="text"class="fenix-wp-fenix-form-control" name="ok-link"><br>
             <label for="">متن لغو</label>
             <input type="text" class="fenix-wp-fenix-form-control" name="cancel">
         </div>

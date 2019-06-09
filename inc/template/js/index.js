@@ -94,6 +94,7 @@ jQuery(document).ready(function ($) {
         let selector = $(".selected-n-b-w").find("#button-title");
         if (inputValue) {
             selector.text(inputValue).show();
+            selector.attr("href",$("input[name=button-link]").val());
         }else {
             selector.hide();
         }
@@ -150,6 +151,7 @@ jQuery(document).ready(function ($) {
         let selector = $(".selected-n-b-w").find("#n-b-w-f-button-ok");
         if (inputValue) {
             selector.text(inputValue).show();
+            selector.attr("href",$("input[name=ok-link]").val());
         } else {
             selector.hide();
         }

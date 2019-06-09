@@ -94,6 +94,7 @@ div.n-b-w-f-body > div.n-b-w-f-left .n-b-w-f-button {
   cursor: pointer;
   font-size: 16px;
   line-height: 25px;
+  text-decoration: none;
 }
 div.n-b-w-f-body > div.n-b-w-f-left .n-b-w-f-button:hover {
   background: #90e743 !important;
@@ -167,6 +168,7 @@ div.n-b-w-f-body .n-b-w-f-counter .n-b-w-f-str {
   font-size: 16px;
   line-height: 25px;
   margin-right: 10px;
+  text-decoration: none;
 }
 .n-b-w-f-num-04 > .n-b-w-f-left #n-b-w-f-button-ok:hover {
   background: #08a4ff !important;

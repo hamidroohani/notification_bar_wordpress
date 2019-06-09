@@ -60,10 +60,9 @@ function notification_bar_wordpress_fenix()
 
         $fenix->setSection('notification_bar_wordpress', [
             'name' => __('ویرایش', 'fenix'),
-            'description' => __(''),
+            'description' => __('پر کردن هر فیلد برای نمایش آن الزامیست.<br>چناچه تصویر هنگام انتخاب جدید تغییر نکرد نادیده بگیرید.', 'n_b_w_fenix_path'),
 
             'fields' => [
-
                 [
                     'name' => __('فعال', 'n_b_w_fenix_path'),
                     'id' => 'kernel',

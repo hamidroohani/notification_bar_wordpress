@@ -55,7 +55,9 @@ function notification_bar_wordpress_fenix()
                 ]
             ],
             'scripts' => [],
-            'styles' => [],
+            'styles' => [
+                "/inc/template/css/notif-1.css",
+            ],
         ]);
 
         $fenix->setSection('notification_bar_wordpress', [
@@ -159,4 +161,4 @@ function notification_bar_wordpress_fenix()
     }
 }
 
-add_action('init','notification_bar_wordpress_fenix');
+add_action('init', 'notification_bar_wordpress_fenix');

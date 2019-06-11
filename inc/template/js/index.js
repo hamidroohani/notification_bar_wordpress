@@ -3,7 +3,6 @@ jQuery(document).ready(function ($) {
     // get body variable
     let body = $("body");
 
-    $(".n-b-w-f-num-01").show();
     body.on("change", "select[name=selectNotification]", function () {
         if ($(this).val() === "introduce_product") {
             $(".n-b-w-f-num-02").hide().removeClass("selected-n-b-w");

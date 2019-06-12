@@ -5,95 +5,117 @@
  * Date: 5/29/2019
  * Time: 11:47 AM
  */
-function notifcations(){
+function notifcations($options)
+{
     $plugin_path = plugin_dir_url(__FILE__);
-    ?>
-    <div class="n-b-w-f-body n-b-w-f-num-01 selected-n-b-w" style="display: none">
-        <div class="n-b-w-f-right">
-            <div class="n-b-w-f-body-per">
-                <span class="n-b-w-f-per" id="percent-parent"><span id="percent">50</span> % تخفیف</span>
-                <img src="<?= $plugin_path ?>../template/images/2980.jpg" id="blah" alt="">
-            </div>
-            <div class="n-b-w-f-title" id="title-product">محصول دارای تخفیف</div>
-            <div class="n-b-w-f-body-price">
-                <span class="n-b-w-f-price" id="price">39,000 تومان</span>
-            </div>
-        </div>
-        <div class="n-b-w-f-left">
-            <a href="#" class="n-b-w-f-button" id="button-title">خرید محصول</a>
-        </div>
-    </div>
-    <div class="n-b-w-f-body n-b-w-f-num-02" style="display: none">
-        <div class="n-b-w-f-right">
-            <div class="n-b-w-f-title" id="title-product">تایمر ها را با طراحی دلخواه ایجاد کنید (تاریخ شمسی)</div>
-        </div>
-        <div class="n-b-w-f-left">
-            <div class="n-b-w-f-counter">
-                <div class="n-b-w-f-days n-b-w-f-counter-panel">
-                    <span class="n-b-w-f-int">23</span>
-                    <span class="n-b-w-f-str">روز</span>
+    if ($options['selectNotification'] != "none") {
+        $title_product = $options['title-product'];
+        $percent = $options['percent'];
+        $price = $options['price'];
+        $button_title = $options['button-title'];
+        $button_link = $options['button-link'];
+        $telegram = $options['telegram'];
+        $instagram = $options['instagram'];
+        $facebook = $options['facebook'];
+        $twitter = $options['twitter'];
+        $youtube = $options['youtube'];
+        $ok = $options['ok'];
+        $ok_link = $options['ok-link'];
+        $cancel = $options['cancel'];
+        switch ($options['selectNotification']) {
+            case "introduce_product" :
+                ?>
+                <div class="n-b-w-f-body n-b-w-f-num-01 selected-n-b-w">
+                    <div class="n-b-w-f-right">
+                        <div class="n-b-w-f-body-per">
+                            <span class="n-b-w-f-per" id="percent-parent"><?= $percent ? '<span id="percent">' . $percent .'</span> % تخفیف</span>' : ''?>
+                            <img src="<?= $plugin_path ?>../template/images/2980.jpg" id="blah" alt="">
+                        </div>
+                        <div class="n-b-w-f-title" id="title-product"><?= $title_product ?></div>
+                        <div class="n-b-w-f-body-price">
+                            <span class="n-b-w-f-price" id="price"><?= $price ?></span>
+                        </div>
+                    </div>
+                    <div class="n-b-w-f-left">
+                        <a href="<?= $button_link ?>" class="n-b-w-f-button" id="button-title"><?= $button_title ?></a>
+                    </div>
                 </div>
-                <div class="n-b-w-f-hours n-b-w-f-counter-panel">
-                    <span class="n-b-w-f-int">11</span>
-                    <span class="n-b-w-f-str">ساعت</span>
+                <?php
+                break;
+            case "day_counter":
+                ?>
+                <div class="n-b-w-f-body n-b-w-f-num-02">
+                    <div class="n-b-w-f-right">
+                        <div class="n-b-w-f-title" id="title-product"><?= $title_product ?></div>
+                    </div>
+                    <div class="n-b-w-f-left">
+                        <div class="n-b-w-f-counter">
+                            <div class="n-b-w-f-days n-b-w-f-counter-panel">
+                                <span class="n-b-w-f-int">23</span>
+                                <span class="n-b-w-f-str">روز</span>
+                            </div>
+                            <div class="n-b-w-f-hours n-b-w-f-counter-panel">
+                                <span class="n-b-w-f-int">11</span>
+                                <span class="n-b-w-f-str">ساعت</span>
+                            </div>
+                            <div class="n-b-w-f-minuet n-b-w-f-counter-panel">
+                                <span class="n-b-w-f-int">08</span>
+                                <span class="n-b-w-f-str">دقیقه</span>
+                            </div>
+                            <div class="n-b-w-f-second n-b-w-f-counter-panel">
+                                <span class="n-b-w-f-int">23</span>
+                                <span class="n-b-w-f-str">ثانیه</span>
+                            </div>
+                        </div>
+                        <span class="n-b-w-f-button" id="button-title">تست</span>
+                    </div>
                 </div>
-                <div class="n-b-w-f-minuet n-b-w-f-counter-panel">
-                    <span class="n-b-w-f-int">08</span>
-                    <span class="n-b-w-f-str">دقیقه</span>
+                <?php
+                break;
+            case "social":
+                ?>
+                <div class="n-b-w-f-body n-b-w-f-num-03">
+                    <div class="n-b-w-f-center">
+                        <div class="n-b-w-f-title" id="title-product">ما را در شبکه های اجتماعی دنبال کنید :</div>
+                        <a href="" id="facebook" <?= $facebook ? '' : 'style="display: none"' ?>><img
+                                    src="<?= $plugin_path ?>../template/images/facebook.svg" alt=""></a>
+                        <a href="" id="telegram" <?= $telegram ? '' : 'style="display: none"' ?>><img
+                                    src="<?= $plugin_path ?>../template/images/telegram.svg" alt=""></a>
+                        <a href="" id="youtube" <?= $youtube ? '' : 'style="display: none"' ?>><img
+                                    src="<?= $plugin_path ?>../template/images/youtube.svg" alt=""></a>
+                        <a href="" id="twitter" <?= $twitter ? '' : 'style="display: none"' ?>><img
+                                    src="<?= $plugin_path ?>../template/images/twitter.svg" alt=""></a>
+                        <a href="" id="instagram" <?= $instagram ? '' : 'style="display: none"' ?>><img
+                                    src="<?= $plugin_path ?>../template/images/instagram.svg" alt=""></a>
+                    </div>
                 </div>
-                <div class="n-b-w-f-second n-b-w-f-counter-panel">
-                    <span class="n-b-w-f-int">23</span>
-                    <span class="n-b-w-f-str">ثانیه</span>
+                <?php
+                break;
+            case "notification":
+                ?>
+                <div class="n-b-w-f-body n-b-w-f-num-04">
+                    <div class="n-b-w-f-right">
+                        <div class="n-b-w-f-body-img">
+                            <img src="<?= $plugin_path ?>../template/images/bell.jpg" id="blah" alt="">
+                        </div>
+                        <div class="n-b-w-f-title" id="title-product"><?= $title_product ?></div>
+                    </div>
+                    <div class="n-b-w-f-left" id="ok-canel">
+                        <span id="n-b-w-f-button-cancel"><?= $cancel ?></span>
+                        <a href="<?= $ok_link ?>" id="n-b-w-f-button-ok"><?= $ok ?></a>
+                    </div>
                 </div>
-            </div>
-            <span class="n-b-w-f-button" id="button-title">تست</span>
-        </div>
-    </div>
-    <div class="n-b-w-f-body n-b-w-f-num-03" style="display: none">
-        <div class="n-b-w-f-center">
-            <div class="n-b-w-f-title" id="title-product">ما را در شبکه های اجتماعی دنبال کنید :</div>
-            <a href="" id="facebook" style="display: none"><img src="<?= $plugin_path ?>../template/images/facebook.svg" alt=""></a>
-            <a href="" id="telegram" style="display: none"><img src="<?= $plugin_path ?>../template/images/telegram.svg" alt=""></a>
-            <a href="" id="youtube" style="display: none"><img src="<?= $plugin_path ?>../template/images/youtube.svg" alt=""></a>
-            <a href="" id="twitter" style="display: none"><img src="<?= $plugin_path ?>../template/images/twitter.svg" alt=""></a>
-            <a href="" id="instagram" style="display: none"><img src="<?= $plugin_path ?>../template/images/instagram.svg" alt=""></a>
-        </div>
-    </div>
-    <div class="n-b-w-f-body n-b-w-f-num-04" style="display: none">
-        <div class="n-b-w-f-right">
-            <div class="n-b-w-f-body-img">
-                <img src="<?= $plugin_path ?>../template/images/bell.jpg" id="blah" alt="">
-            </div>
-            <div class="n-b-w-f-title" id="title-product">آیا تمایل دارید از تخفیف های ما با خبر شوید</div>
-        </div>
-        <div class="n-b-w-f-left" id="ok-canel">
-            <span id="n-b-w-f-button-cancel">شاید بعدا</span>
-            <a href="#" id="n-b-w-f-button-ok">بله حتما</a>
-        </div>
-    </div>
-    <?php
+                <?php
+                break;
+        }
+    }
 }
 
-function html_notif(){
+function html_notif()
+{
     $options = get_option("notification_bar_wordpress");
     $options = (is_serialized($options)) ? unserialize($options) : $options;
-    ?>
-    <div class="n-b-w-f-body n-b-w-f-num-01 selected-n-b-w">
-        <div class="n-b-w-f-right">
-            <div class="n-b-w-f-body-per">
-                <span class="n-b-w-f-per" id="percent-parent"><span id="percent">50</span> % تخفیف</span>
-                <img src="<?= plugin_dir_url(__FILE__) ?>../template/images/2980.jpg" id="blah" alt="">
-            </div>
-            <div class="n-b-w-f-title" id="title-product">محصول دارای تخفیف</div>
-            <div class="n-b-w-f-body-price">
-                <span class="n-b-w-f-price" id="price">39,000 تومان</span>
-            </div>
-        </div>
-        <div class="n-b-w-f-left">
-            <a href="#" class="n-b-w-f-button" id="button-title">خرید محصول</a>
-        </div>
-    </div>
-    <?php
+    notifcations($options);
 }
 
 add_action("wp_footer", "html_notif");

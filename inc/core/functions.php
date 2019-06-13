@@ -25,7 +25,7 @@ function notifcations($options)
         switch ($options['selectNotification']) {
             case "introduce_product" :
                 ?>
-                <div class="n-b-w-f-body n-b-w-f-num-01 selected-n-b-w">
+                <div class="n-b-w-f-body n-b-w-f-num-01 n-b-w-f-insite selected-n-b-w">
                     <div class="n-b-w-f-right">
                         <div class="n-b-w-f-body-per">
                             <span class="n-b-w-f-per" id="percent-parent"><?= $percent ? '<span id="percent">' . $percent .'</span> % تخفیف</span>' : ''?>
@@ -44,7 +44,7 @@ function notifcations($options)
                 break;
             case "day_counter":
                 ?>
-                <div class="n-b-w-f-body n-b-w-f-num-02">
+                <div class="n-b-w-f-body n-b-w-f-num-02 n-b-w-f-insite">
                     <div class="n-b-w-f-right">
                         <div class="n-b-w-f-title" id="title-product"><?= $title_product ?></div>
                     </div>
@@ -74,18 +74,18 @@ function notifcations($options)
                 break;
             case "social":
                 ?>
-                <div class="n-b-w-f-body n-b-w-f-num-03">
+                <div class="n-b-w-f-body n-b-w-f-num-03 n-b-w-f-insite">
                     <div class="n-b-w-f-center">
                         <div class="n-b-w-f-title" id="title-product">ما را در شبکه های اجتماعی دنبال کنید :</div>
-                        <a href="" id="facebook" <?= $facebook ? '' : 'style="display: none"' ?>><img
+                        <a href="https://www.facebook.com/<?= $facebook ?>" id="facebook" <?= $facebook ? '' : 'style="display: none"' ?> target="_blank"><img
                                     src="<?= $plugin_path ?>../template/images/facebook.svg" alt=""></a>
-                        <a href="" id="telegram" <?= $telegram ? '' : 'style="display: none"' ?>><img
+                        <a href="https://t.me/<?= $telegram ?>" id="telegram" <?= $telegram ? '' : 'style="display: none"' ?> target="_blank"><img
                                     src="<?= $plugin_path ?>../template/images/telegram.svg" alt=""></a>
-                        <a href="" id="youtube" <?= $youtube ? '' : 'style="display: none"' ?>><img
+                        <a href="https://www.youtube.com/channel/<?= $youtube ?>" id="youtube" <?= $youtube ? '' : 'style="display: none"' ?> target="_blank"><img
                                     src="<?= $plugin_path ?>../template/images/youtube.svg" alt=""></a>
-                        <a href="" id="twitter" <?= $twitter ? '' : 'style="display: none"' ?>><img
+                        <a href="https://twitter.com/<?= $twitter ?>" id="twitter" <?= $twitter ? '' : 'style="display: none"' ?> target="_blank"><img
                                     src="<?= $plugin_path ?>../template/images/twitter.svg" alt=""></a>
-                        <a href="" id="instagram" <?= $instagram ? '' : 'style="display: none"' ?>><img
+                        <a href="https://www.instagram.com/<?= $instagram ?>" id="instagram" <?= $instagram ? '' : 'style="display: none"' ?> target="_blank"><img
                                     src="<?= $plugin_path ?>../template/images/instagram.svg" alt=""></a>
                     </div>
                 </div>
@@ -93,7 +93,7 @@ function notifcations($options)
                 break;
             case "notification":
                 ?>
-                <div class="n-b-w-f-body n-b-w-f-num-04">
+                <div class="n-b-w-f-body n-b-w-f-num-04 n-b-w-f-insite">
                     <div class="n-b-w-f-right">
                         <div class="n-b-w-f-body-img">
                             <img src="<?= $plugin_path ?>../template/images/bell.jpg" id="blah" alt="">

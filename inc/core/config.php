@@ -57,6 +57,7 @@ function notification_bar_wordpress_fenix()
             'scripts' => [],
             'styles' => [
                 "/inc/template/css/notif-1.css",
+                "/inc/template/css/global.css",
             ],
         ]);
 
@@ -70,6 +71,93 @@ function notification_bar_wordpress_fenix()
                     'id' => 'kernel',
                     "path" => "/inc/core/kernel.php",
                     'type' => 'php',
+                ],
+                [
+                    'name' => __('انتخاب نوار', 'n_b_w_fenix_path'),
+                    'id' => 'selectNotification',
+                    'type' => 'select',
+                    'option' => [
+                        'none' => "انتخاب نوار",
+                        'introduce_product' => "معرفی محصول",
+                        'day_counter' => "روز شمار",
+                        'social' => "شبکه های اجتماعی",
+                        'notification' => "اطلاع رسانی",
+                    ],
+                ],
+                [
+                    'name' => __('عنوان', 'n_b_w_fenix_path'),
+                    'id' => 'title-product',
+                    'type' => 'text',
+                ],
+                [
+                    'name' => __('تخفیف', 'n_b_w_fenix_path'),
+                    'id' => 'percent',
+                    'type' => 'text',
+                ],
+                [
+                    'name' => __('قیمت', 'n_b_w_fenix_path'),
+                    'id' => 'price',
+                    'type' => 'text',
+                ],
+                [
+                    'name' => __('متن دکمه', 'n_b_w_fenix_path'),
+                    'id' => 'button-title',
+                    'type' => 'text',
+                ],
+                [
+                    'name' => __('لینک دکمه', 'n_b_w_fenix_path'),
+                    'id' => 'button-link',
+                    'type' => 'text',
+                ],
+                [
+                    'name' => __('تلگرام', 'n_b_w_fenix_path'),
+                    'id' => 'telegram',
+                    'type' => 'text',
+                ],
+                [
+                    'name' => __('اینستاگرام', 'n_b_w_fenix_path'),
+                    'id' => 'instagram',
+                    'type' => 'text',
+                ],
+                [
+                    'name' => __('فیسبوک', 'n_b_w_fenix_path'),
+                    'id' => 'facebook',
+                    'type' => 'text',
+                ],
+                [
+                    'name' => __('توئیتر', 'n_b_w_fenix_path'),
+                    'id' => 'twitter',
+                    'type' => 'text',
+                ],
+                [
+                    'name' => __('یوتیوب', 'n_b_w_fenix_path'),
+                    'id' => 'youtube',
+                    'type' => 'text',
+                ],
+                [
+                    'name' => __('تصویر', 'n_b_w_fenix_path'),
+                    'id' => 'image',
+                    'type' => 'file',
+                ],
+                [
+                    'name' => __('متن تایید', 'n_b_w_fenix_path'),
+                    'id' => 'ok',
+                    'type' => 'text',
+                ],
+                [
+                    'name' => __('لینک تایید', 'n_b_w_fenix_path'),
+                    'id' => 'ok-link',
+                    'type' => 'text',
+                ],
+                [
+                    'name' => __('متن لغو', 'n_b_w_fenix_path'),
+                    'id' => 'cancel',
+                    'type' => 'text',
+                ],
+                [
+                    'name' => __('عرض نوار', 'n_b_w_fenix_path'),
+                    'id' => 'width',
+                    'type' => 'text',
                 ],
             ]
 

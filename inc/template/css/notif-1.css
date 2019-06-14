@@ -116,12 +116,19 @@ div.n-b-w-f-body .n-b-w-f-counter .n-b-w-f-str {
   padding: 0 3px;
 }
 
+.n-b-w-f-num-01 {
+  background: #FFFFFF !important;
+}
 .n-b-w-f-num-01 > div.n-b-w-f-right > div.n-b-w-f-body-per {
   position: relative;
 }
 .n-b-w-f-num-01 > div.n-b-w-f-right > div.n-b-w-f-body-per > img {
   width: 50px;
   border-radius: 50px;
+}
+
+.n-b-w-f-num-02 {
+  background: #FFFFFF !important;
 }
 
 .n-b-w-f-num-03 {
@@ -139,6 +146,9 @@ div.n-b-w-f-body .n-b-w-f-counter .n-b-w-f-str {
 .n-b-w-f-num-03 > .n-b-w-f-center > a > img {
   width: 60px;
   margin: 0 10px;
+}
+.n-b-w-f-num-04 {
+  background: #FFFFFF !important;
 }
 .n-b-w-f-num-04 > .n-b-w-f-right > .n-b-w-f-body-img {
   border-left: 1px solid #b9b9b9;

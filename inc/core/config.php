@@ -51,7 +51,10 @@ function notification_bar_wordpress_fenix()
             ],
             'localize-admin-script' => [
                 'n-b-w-setting' => [
-                    'nbwSetting' => plugin_dir_url(__FILE__)
+                    'nbwSetting' => [
+                        'plugin_url' => plugin_dir_url(__FILE__),
+                        'options' => (get_option("notification_bar_wordpress")) ? get_option("notification_bar_wordpress") : []
+                    ]
                 ]
             ],
             'scripts' => [],
@@ -158,6 +161,11 @@ function notification_bar_wordpress_fenix()
                     'name' => __('عرض نوار', 'n_b_w_fenix_path'),
                     'id' => 'width',
                     'type' => 'text',
+                ],
+                [
+                    'name' => __('عرض نوار', 'n_b_w_fenix_path'),
+                    'id' => 'widths',
+                    'type' => 'time',
                 ],
             ]
 

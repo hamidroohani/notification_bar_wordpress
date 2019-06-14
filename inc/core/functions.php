@@ -22,10 +22,11 @@ function notifcations($options)
         $ok = $options['ok'];
         $ok_link = $options['ok-link'];
         $cancel = $options['cancel'];
+        $width = $options['width'];
         switch ($options['selectNotification']) {
             case "introduce_product" :
                 ?>
-                <div class="n-b-w-f-body n-b-w-f-num-01 n-b-w-f-insite selected-n-b-w">
+                <div class="n-b-w-f-body n-b-w-f-num-01 n-b-w-f-insite selected-n-b-w" <?= $width ? 'style="width: ' . $width . 'px"' : ''?> >
                     <div class="n-b-w-f-right">
                         <div class="n-b-w-f-body-per">
                             <span class="n-b-w-f-per" id="percent-parent"><?= $percent ? '<span id="percent">' . $percent .'</span> % تخفیف</span>' : ''?>
@@ -93,7 +94,7 @@ function notifcations($options)
                 break;
             case "notification":
                 ?>
-                <div class="n-b-w-f-body n-b-w-f-num-04 n-b-w-f-insite">
+                <div class="n-b-w-f-body n-b-w-f-num-04 n-b-w-f-insite" <?= $width ? 'style="width: ' . $width . 'px"' : ''?>>
                     <div class="n-b-w-f-right">
                         <div class="n-b-w-f-body-img">
                             <img src="<?= $plugin_path ?>../template/images/bell.jpg" id="blah" alt="">
@@ -113,7 +114,7 @@ function notifcations($options)
 
 function html_notif()
 {
-    $options = get_option("notification_bar_wordpress");
+    $options = (get_option("notification_bar_wordpress")) ? get_option("notification_bar_wordpress") : [];
     $options = (is_serialized($options)) ? unserialize($options) : $options;
     notifcations($options);
 }

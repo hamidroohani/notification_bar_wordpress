@@ -4,7 +4,6 @@ jQuery(document).ready(function ($) {
     let body = $("body");
 
     let setting = nbwSetting;
-    console.log(setting);
 
     body.on("change", "select[name=selectNotification]", function () {
         if ($(this).val() === "introduce_product") {
@@ -191,8 +190,16 @@ jQuery(document).ready(function ($) {
         let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+        hours = hours.toString();
+        minutes = minutes.toString();
+        seconds = seconds.toString();
+
+        if (hours.length === 1) hours = "0" + hours;
+        if (minutes.length === 1) minutes= "0" + minutes;
+        if (seconds.length === 1) seconds= "0" + seconds;
+
         // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        let ddd = days + "d " + hours + "h "
             + minutes + "m " + seconds + "s ";
 
         // If the count down is over, write some text

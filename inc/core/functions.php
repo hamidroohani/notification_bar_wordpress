@@ -5,6 +5,21 @@
  * Date: 5/29/2019
  * Time: 11:47 AM
  */
+function load_scripts_n_b_w(){
+    wp_enqueue_style( 'notif_b_wp_admin_css', plugins_url('/../template/css/global.css', __FILE__) );
+    wp_enqueue_style( 'notif_b_wp_admin_table_css', plugins_url('/../template/css/notif-1.css', __FILE__) );
+    wp_enqueue_style( 'notif_b_wp_admin_config', plugins_url('/../template/css/configure.css', __FILE__) );
+
+    wp_enqueue_script( 'notif_b_script_admin_index', plugins_url( '/../template/js/index.js', __FILE__ ) );
+
+    wp_localize_script( 'notif_b_script_admin_index', 'nbwSetting', ['nbwSetting' => get_option('notification_bar_wordpress') !== false ? get_option('notification_bar_wordpress') : [] ]);
+
+ // Enqueued script with localized data.
+ wp_enqueue_script( 'notif_b_script_admin_index' );
+}
+
+add_action( 'init', 'load_scripts_n_b_w' );
+
 function notifcations($options)
 {
     $plugin_path = plugin_dir_url(__FILE__);

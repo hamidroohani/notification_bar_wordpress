@@ -11,17 +11,17 @@ function notification_bar_wordpress_fenix()
         $fenix->start([
 
             // set name
-            'small_name' => __('اعلانات', 'n_b_w_fenix_path'),
-            'name' => __('افزونه نمایش اعلانات پیشرفته ', 'n_b_w_fenix_path'),
+            'small_name' => __('اعلانات', 'n_b_w_bahram_path'),
+            'name' => __('افزونه نمایش اعلانات پیشرفته ', 'n_b_w_bahram_path'),
 
             // set id & textDomain
             'id' => 'notification_bar_wordpress',
             'url' => '#',
             'textDomain' => 'notificationBarWordpress',
-            'icon' => plugins_url('/inc/template/images/youtube.svg', n_b_w_fenix_path),
+            'icon' => plugins_url('/inc/template/images/youtube.svg', n_b_w_bahram_path),
 
             // set path
-            'path' => n_b_w_fenix_path,
+            'path' => n_b_w_bahram_path,
             'permission' => 'manage_options',
             'position' => '100',
 
@@ -66,17 +66,17 @@ function notification_bar_wordpress_fenix()
 
         $fenix->setSection('notification_bar_wordpress', [
             'name' => __('ویرایش', 'fenix'),
-            'description' => __('پر کردن هر فیلد برای نمایش آن الزامیست.<br>چناچه تصویر هنگام انتخاب جدید تغییر نکرد نادیده بگیرید.', 'n_b_w_fenix_path'),
+            'description' => __('پر کردن هر فیلد برای نمایش آن الزامیست.<br>چناچه تصویر هنگام انتخاب جدید تغییر نکرد نادیده بگیرید.', 'n_b_w_bahram_path'),
 
             'fields' => [
                 [
-                    'name' => __('فعال', 'n_b_w_fenix_path'),
+                    'name' => __('فعال', 'n_b_w_bahram_path'),
                     'id' => 'kernel',
                     "path" => "/inc/core/kernel.php",
                     'type' => 'php',
                 ],
                 [
-                    'name' => __('انتخاب نوار', 'n_b_w_fenix_path'),
+                    'name' => __('انتخاب نوار', 'n_b_w_bahram_path'),
                     'id' => 'selectNotification',
                     'type' => 'select',
                     'option' => [
@@ -88,82 +88,82 @@ function notification_bar_wordpress_fenix()
                     ],
                 ],
                 [
-                    'name' => __('عنوان', 'n_b_w_fenix_path'),
+                    'name' => __('عنوان', 'n_b_w_bahram_path'),
                     'id' => 'title-product',
                     'type' => 'text',
                 ],
                 [
-                    'name' => __('تخفیف', 'n_b_w_fenix_path'),
+                    'name' => __('تخفیف', 'n_b_w_bahram_path'),
                     'id' => 'percent',
                     'type' => 'text',
                 ],
                 [
-                    'name' => __('قیمت', 'n_b_w_fenix_path'),
+                    'name' => __('قیمت', 'n_b_w_bahram_path'),
                     'id' => 'price',
                     'type' => 'text',
                 ],
                 [
-                    'name' => __('متن دکمه', 'n_b_w_fenix_path'),
+                    'name' => __('متن دکمه', 'n_b_w_bahram_path'),
                     'id' => 'button-title',
                     'type' => 'text',
                 ],
                 [
-                    'name' => __('لینک دکمه', 'n_b_w_fenix_path'),
+                    'name' => __('لینک دکمه', 'n_b_w_bahram_path'),
                     'id' => 'button-link',
                     'type' => 'text',
                 ],
                 [
-                    'name' => __('تلگرام', 'n_b_w_fenix_path'),
+                    'name' => __('تلگرام', 'n_b_w_bahram_path'),
                     'id' => 'telegram',
                     'type' => 'text',
                 ],
                 [
-                    'name' => __('اینستاگرام', 'n_b_w_fenix_path'),
+                    'name' => __('اینستاگرام', 'n_b_w_bahram_path'),
                     'id' => 'instagram',
                     'type' => 'text',
                 ],
                 [
-                    'name' => __('فیسبوک', 'n_b_w_fenix_path'),
+                    'name' => __('فیسبوک', 'n_b_w_bahram_path'),
                     'id' => 'facebook',
                     'type' => 'text',
                 ],
                 [
-                    'name' => __('توئیتر', 'n_b_w_fenix_path'),
+                    'name' => __('توئیتر', 'n_b_w_bahram_path'),
                     'id' => 'twitter',
                     'type' => 'text',
                 ],
                 [
-                    'name' => __('یوتیوب', 'n_b_w_fenix_path'),
+                    'name' => __('یوتیوب', 'n_b_w_bahram_path'),
                     'id' => 'youtube',
                     'type' => 'text',
                 ],
                 [
-                    'name' => __('تصویر', 'n_b_w_fenix_path'),
+                    'name' => __('تصویر', 'n_b_w_bahram_path'),
                     'id' => 'image',
                     'type' => 'file',
                 ],
                 [
-                    'name' => __('متن تایید', 'n_b_w_fenix_path'),
+                    'name' => __('متن تایید', 'n_b_w_bahram_path'),
                     'id' => 'ok',
                     'type' => 'text',
                 ],
                 [
-                    'name' => __('لینک تایید', 'n_b_w_fenix_path'),
+                    'name' => __('لینک تایید', 'n_b_w_bahram_path'),
                     'id' => 'ok-link',
                     'type' => 'text',
                 ],
                 [
-                    'name' => __('متن لغو', 'n_b_w_fenix_path'),
+                    'name' => __('متن لغو', 'n_b_w_bahram_path'),
                     'id' => 'cancel',
                     'type' => 'text',
                 ],
                 [
-                    'name' => __('عرض نوار', 'n_b_w_fenix_path'),
+                    'name' => __('عرض نوار', 'n_b_w_bahram_path'),
                     'id' => 'width',
                     'type' => 'text',
                 ],
                 [
-                    'name' => __('عرض نوار', 'n_b_w_fenix_path'),
+                    'name' => __('عرض نوار', 'n_b_w_bahram_path'),
                     'id' => 'widths',
                     'type' => 'time',
                 ],

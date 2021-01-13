@@ -1,68 +1,112 @@
 @font-face {
-  font-family: IRANSansFa;
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/iran-sans-fa/eot/IRANSansWeb(FaNum)_Black.eot");
-  src: url("../fonts/iran-sans-fa/eot/IRANSansWeb(FaNum)_Black.eot?#iefix") format("embedded-opentype"), url("../fonts/iran-sans-fa/woff2/IRANSansWeb(FaNum)_Black.woff2") format("woff2"), url("../fonts/iran-sans-fa/woff/IRANSansWeb(FaNum)_Black.woff") format("woff"), url("../fonts/iran-sans-fa/ttf/IRANSansWeb(FaNum)_Black.ttf") format("truetype");
-}
-@font-face {
-  font-family: IRANSansFa;
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/iran-sans-fa/eot/IRANSansWeb(FaNum)_Bold.eot");
-  src: url("../fonts/iran-sans-fa/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/iran-sans-fa/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"), url("../fonts/iran-sans-fa/woff/IRANSansWeb(FaNum)_Bold.woff") format("woff"), url("../fonts/iran-sans-fa/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: IRANSansFa;
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/iran-sans-fa/eot/IRANSansWeb(FaNum)_Medium.eot");
-  src: url("../fonts/iran-sans-fa/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/iran-sans-fa/woff2/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"), url("../fonts/iran-sans-fa/woff/IRANSansWeb(FaNum)_Medium.woff") format("woff"), url("../fonts/iran-sans-fa/ttf/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: IRANSansFa;
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/iran-sans-fa/eot/IRANSansWeb(FaNum)_Light.eot");
-  src: url("../fonts/iran-sans-fa/eot/IRANSansWeb(FaNum)_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/iran-sans-fa/woff2/IRANSansWeb(FaNum)_Light.woff2") format("woff2"), url("../fonts/iran-sans-fa/woff/IRANSansWeb(FaNum)_Light.woff") format("woff"), url("../fonts/iran-sans-fa/ttf/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: IRANSansFa;
-  font-style: normal;
-  font-weight: 200;
-  src: url("../fonts/iran-sans-fa/eot/IRANSansWeb(FaNum)_UltraLight.eot");
-  src: url("../fonts/iran-sans-fa/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/iran-sans-fa/woff2/IRANSansWeb(FaNum)_UltraLight.woff2") format("woff2"), url("../fonts/iran-sans-fa/woff/IRANSansWeb(FaNum)_UltraLight.woff") format("woff"), url("../fonts/iran-sans-fa/ttf/IRANSansWeb(FaNum)_UltraLight.ttf") format("truetype");
-}
-@font-face {
-  font-family: IRANSansFa;
-  font-style: normal;
+  font-family: Vazir;
+  src: url("../fonts/Farsi-Digits/Vazir.eot");
+  src: url("../fonts/Farsi-Digits/Vazir.eot?#iefix") format("embedded-opentype"), url("../fonts/Farsi-Digits/Vazir.woff2") format("woff2"), url("../fonts/Farsi-Digits/Vazir.woff") format("woff"), url("../fonts/Farsi-Digits/Vazir.ttf") format("truetype");
   font-weight: normal;
-  src: url("../fonts/iran-sans-fa/eot/IRANSansWeb(FaNum).eot");
-  src: url("../fonts/iran-sans-fa/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"), url("../fonts/iran-sans-fa/woff2/IRANSansWeb(FaNum).woff2") format("woff2"), url("../fonts/iran-sans-fa/woff/IRANSansWeb(FaNum).woff") format("woff"), url("../fonts/iran-sans-fa/ttf/IRANSansWeb(FaNum).ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Farsi-Digits/Vazir-Bold.eot");
+  src: url("../fonts/Farsi-Digits/Vazir-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Farsi-Digits/Vazir-Bold.woff2") format("woff2"), url("../fonts/Farsi-Digits/Vazir-Bold.woff") format("woff"), url("../fonts/Farsi-Digits/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Farsi-Digits/Vazir-Black.eot");
+  src: url("../fonts/Farsi-Digits/Vazir-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Farsi-Digits/Vazir-Black.woff2") format("woff2"), url("../fonts/Farsi-Digits/Vazir-Black.woff") format("woff"), url("../fonts/Farsi-Digits/Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Farsi-Digits/Vazir-Medium.eot");
+  src: url("../fonts/Farsi-Digits/Vazir-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Farsi-Digits/Vazir-Medium.woff2") format("woff2"), url("../fonts/Farsi-Digits/Vazir-Medium.woff") format("woff"), url("../fonts/Farsi-Digits/Vazir-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Farsi-Digits/Vazir-Light.eot");
+  src: url("../fonts/Farsi-Digits/Vazir-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Farsi-Digits/Vazir-Light.woff2") format("woff2"), url("../fonts/Farsi-Digits/Vazir-Light.woff") format("woff"), url("../fonts/Farsi-Digits/Vazir-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Farsi-Digits/Vazir-Thin.eot");
+  src: url("../fonts/Farsi-Digits/Vazir-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Farsi-Digits/Vazir-Thin.woff2") format("woff2"), url("../fonts/Farsi-Digits/Vazir-Thin.woff") format("woff"), url("../fonts/Farsi-Digits/Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
 }
 div.n-b-w-f-body {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-wrap: wrap;
+  direction: rtl;
+  height: 103px;
+  width: 100%;
+  font-family: "Vazir", sans-serif;
+  margin: 0 auto;
+}
+div.n-b-w-f-body > .n-b-w-f-close {
+  position: absolute;
+  top: 0;
+  right: 6px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+div.n-b-w-f-body > .n-b-w-f-close:hover .n-b-w-f-close-icon {
+  opacity: 1;
+}
+div.n-b-w-f-body > .n-b-w-f-close > .n-b-w-f-close-icon {
+  width: 25px;
+  height: 25px;
+  opacity: 0.3;
+}
+div.n-b-w-f-body > .n-b-w-f-close > .n-b-w-f-close-icon:hover {
+  opacity: 1;
+}
+div.n-b-w-f-body > .n-b-w-f-close > .n-b-w-f-close-icon:before, div.n-b-w-f-body > .n-b-w-f-close > .n-b-w-f-close-icon:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 25px;
+  width: 3px;
+  background-color: #333;
+}
+div.n-b-w-f-body > .n-b-w-f-close > .n-b-w-f-close-icon:before {
+  transform: rotate(45deg);
+}
+div.n-b-w-f-body > .n-b-w-f-close > .n-b-w-f-close-icon:after {
+  transform: rotate(-45deg);
+}
+div.n-b-w-f-body > div.n-b-w-f-panel-body {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  direction: rtl;
   box-shadow: 0 0 3px #a8a5a5;
   height: 84px;
   width: 90%;
-  font-family: "IRANSansFa", sans-serif;
+  font-family: "Vazir", sans-serif;
   margin: 0 auto;
+  border-radius: 3px;
 }
-div.n-b-w-f-body .n-b-w-f-title {
+div.n-b-w-f-body > div.n-b-w-f-panel-body .n-b-w-f-title {
   font-size: 17px;
   font-weight: 600;
   padding-right: 20px;
 }
-div.n-b-w-f-body > div.n-b-w-f-right {
+div.n-b-w-f-body > div.n-b-w-f-panel-body > div.n-b-w-f-right {
   display: flex;
   align-items: center;
   padding-right: 15px;
 }
-div.n-b-w-f-body > div.n-b-w-f-right .n-b-w-f-per {
+div.n-b-w-f-body > div.n-b-w-f-panel-body > div.n-b-w-f-right .n-b-w-f-per {
   position: absolute;
   background-color: #f85032;
   color: #ffffff;
@@ -74,7 +118,7 @@ div.n-b-w-f-body > div.n-b-w-f-right .n-b-w-f-per {
   right: -11px;
   font-size: 13px;
 }
-div.n-b-w-f-body > div.n-b-w-f-right .n-b-w-f-body-price .n-b-w-f-price {
+div.n-b-w-f-body > div.n-b-w-f-panel-body > div.n-b-w-f-right .n-b-w-f-body-price .n-b-w-f-price {
   background-color: #00BCD4;
   color: #ffffff;
   margin-right: 10px;
@@ -82,11 +126,12 @@ div.n-b-w-f-body > div.n-b-w-f-right .n-b-w-f-body-price .n-b-w-f-price {
   padding: 0 8px;
   font-size: 16px;
 }
-div.n-b-w-f-body > div.n-b-w-f-left {
+div.n-b-w-f-body > div.n-b-w-f-panel-body > div.n-b-w-f-left {
   padding-left: 15px;
   display: flex;
+  align-items: center;
 }
-div.n-b-w-f-body > div.n-b-w-f-left .n-b-w-f-button {
+div.n-b-w-f-body > div.n-b-w-f-panel-body > div.n-b-w-f-left .n-b-w-f-button {
   background: #81d742 !important;
   color: #ffffff !important;
   padding: 3px 10px;
@@ -95,14 +140,15 @@ div.n-b-w-f-body > div.n-b-w-f-left .n-b-w-f-button {
   font-size: 16px;
   line-height: 25px;
   text-decoration: none;
+  margin-right: 20px;
 }
-div.n-b-w-f-body > div.n-b-w-f-left .n-b-w-f-button:hover {
+div.n-b-w-f-body > div.n-b-w-f-panel-body > div.n-b-w-f-left .n-b-w-f-button:hover {
   background: #90e743 !important;
 }
-div.n-b-w-f-body .n-b-w-f-counter {
+div.n-b-w-f-body > div.n-b-w-f-panel-body .n-b-w-f-counter {
   display: flex;
 }
-div.n-b-w-f-body .n-b-w-f-counter .n-b-w-f-counter-panel {
+div.n-b-w-f-body > div.n-b-w-f-panel-body .n-b-w-f-counter .n-b-w-f-counter-panel {
   background-color: #fe8c00;
   margin: 0 5px;
   font-size: 15px;
@@ -110,7 +156,7 @@ div.n-b-w-f-body .n-b-w-f-counter .n-b-w-f-counter-panel {
   color: #ffffff;
   padding: 2px 12px;
 }
-div.n-b-w-f-body .n-b-w-f-counter .n-b-w-f-str {
+div.n-b-w-f-body > div.n-b-w-f-panel-body .n-b-w-f-counter .n-b-w-f-str {
   background-color: #e87b00;
   font-weight: 300;
   padding: 0 3px;
@@ -119,45 +165,54 @@ div.n-b-w-f-body .n-b-w-f-counter .n-b-w-f-str {
 .n-b-w-f-num-01 {
   background: #FFFFFF !important;
 }
-.n-b-w-f-num-01 > div.n-b-w-f-right > div.n-b-w-f-body-per {
+.n-b-w-f-num-01 div.n-b-w-f-right > div.n-b-w-f-body-per {
   position: relative;
 }
-.n-b-w-f-num-01 > div.n-b-w-f-right > div.n-b-w-f-body-per > img {
+.n-b-w-f-num-01 div.n-b-w-f-right > div.n-b-w-f-body-per > img {
   width: 50px;
   border-radius: 50px;
 }
 
 .n-b-w-f-num-02 {
-  background: #FFFFFF !important;
+  background: #fff !important;
+}
+.n-b-w-f-num-02 div.n-b-w-f-panel-body {
+  background: #333 !important;
+}
+.n-b-w-f-num-02 .n-b-w-f-title {
+  color: #fff;
 }
 
 .n-b-w-f-num-03 {
+  background-color: #fff;
+}
+.n-b-w-f-num-03 div.n-b-w-f-panel-body {
   background-color: #35b6f9;
   justify-content: center !important;
   align-items: center;
 }
-.n-b-w-f-num-03 > .n-b-w-f-center {
+.n-b-w-f-num-03 .n-b-w-f-center {
   display: flex;
   align-items: center;
 }
-.n-b-w-f-num-03 > .n-b-w-f-center .n-b-w-f-title {
+.n-b-w-f-num-03 .n-b-w-f-center .n-b-w-f-title {
   color: #FFFFFF;
 }
-.n-b-w-f-num-03 > .n-b-w-f-center > a > img {
+.n-b-w-f-num-03 .n-b-w-f-center > a > img {
   width: 60px;
   margin: 0 10px;
 }
 .n-b-w-f-num-04 {
   background: #FFFFFF !important;
 }
-.n-b-w-f-num-04 > .n-b-w-f-right > .n-b-w-f-body-img {
+.n-b-w-f-num-04 .n-b-w-f-right > .n-b-w-f-body-img {
   border-left: 1px solid #b9b9b9;
 }
-.n-b-w-f-num-04 > .n-b-w-f-right > .n-b-w-f-body-img img {
+.n-b-w-f-num-04 .n-b-w-f-right > .n-b-w-f-body-img img {
   width: 73px;
   padding-left: 10px;
 }
-.n-b-w-f-num-04 > .n-b-w-f-left #n-b-w-f-button-cancel {
+.n-b-w-f-num-04 .n-b-w-f-left #n-b-w-f-button-cancel {
   background: #f8f9fa !important;
   color: #000 !important;
   padding: 3px 10px;
@@ -166,10 +221,10 @@ div.n-b-w-f-body .n-b-w-f-counter .n-b-w-f-str {
   font-size: 16px;
   line-height: 25px;
 }
-.n-b-w-f-num-04 > .n-b-w-f-left #n-b-w-f-button-cancel:hover {
+.n-b-w-f-num-04 .n-b-w-f-left #n-b-w-f-button-cancel:hover {
   background: #edeeef !important;
 }
-.n-b-w-f-num-04 > .n-b-w-f-left #n-b-w-f-button-ok {
+.n-b-w-f-num-04 .n-b-w-f-left #n-b-w-f-button-ok {
   background: #007bff !important;
   color: #ffffff !important;
   padding: 3px 10px;
@@ -180,7 +235,7 @@ div.n-b-w-f-body .n-b-w-f-counter .n-b-w-f-str {
   margin-right: 10px;
   text-decoration: none;
 }
-.n-b-w-f-num-04 > .n-b-w-f-left #n-b-w-f-button-ok:hover {
+.n-b-w-f-num-04 .n-b-w-f-left #n-b-w-f-button-ok:hover {
   background: #08a4ff !important;
 }
 

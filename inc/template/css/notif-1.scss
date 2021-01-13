@@ -2,96 +2,148 @@
 
 div.n-b-w-f-body {
   display: flex;
-  justify-content: space-between;
+  position: relative;
   align-items: center;
   flex-wrap: wrap;
   direction: rtl;
-  box-shadow: 0 0 3px #a8a5a5;
-  height: 84px;
-  width: 90%;
-  font-family: 'IRANSansFa', sans-serif;
+  height: 103px;
+  width: 100%;
+  font-family: 'Vazir', sans-serif;
   margin: 0 auto;
 
-  .n-b-w-f-title {
-    font-size: 17px;
-    font-weight: 600;
-    padding-right: 20px;
-  }
+  > .n-b-w-f-close {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
 
-  > div.n-b-w-f-right {
-    display: flex;
-    align-items: center;
-    padding-right: 15px;
-
-    .n-b-w-f-per {
-      position: absolute;
-      background-color: #f85032;
-      color: #ffffff;
-      font-weight: 500;
-      white-space: nowrap;
-      padding: 4px;
-      border-radius: 2px;
-      top: -13px;
-      right: -11px;
-      font-size: 13px;
-    }
-
-
-    .n-b-w-f-body-price {
-      .n-b-w-f-price {
-        background-color: #00BCD4;
-        color: #ffffff;
-        margin-right: 10px;
-        border-radius: 12px;
-        padding: 0 8px;
-        font-size: 16px;
+    &:hover {
+      .n-b-w-f-close-icon {
+        opacity: 1;
       }
     }
 
-  }
-
-  > div.n-b-w-f-left {
-    padding-left: 15px;
-    display: flex;
-
-    .n-b-w-f-button {
-      background: #81d742 !important;
-      color: #ffffff !important;
-      padding: 3px 10px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-      line-height: 25px;
-      text-decoration: none;
-
+    > .n-b-w-f-close-icon {
+      width: 25px;
+      height: 25px;
+      opacity: 0.3;
       &:hover {
-        background: #90e743 !important;
+        opacity: 1;
       }
+      &:before, &:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 25px;
+        width: 3px;
+        background-color: #333;
+      }
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+
     }
   }
 
-  .n-b-w-f-counter {
+  > div.n-b-w-f-panel-body {
     display: flex;
-    .n-b-w-f-counter-panel {
-      background-color: #fe8c00;
-      margin: 0 5px;
-      font-size: 15px;
-      border-radius: 3px;
-      color: #ffffff;
-      padding: 2px 12px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 3px #a8a5a5;
+    height: 84px;
+    width: 90%;
+    font-family: 'Vazir', sans-serif;
+    margin: 0 auto;
+    border-radius: 3px;
+
+    .n-b-w-f-title {
+      font-size: 17px;
+      font-weight: 600;
+      padding-right: 20px;
     }
 
-    .n-b-w-f-str{
-      background-color: #e87b00;
-      font-weight: 300;
-      padding: 0 3px;
+    > div.n-b-w-f-right {
+      display: flex;
+      align-items: center;
+      padding-right: 15px;
+
+      .n-b-w-f-per {
+        position: absolute;
+        background-color: #f85032;
+        color: #ffffff;
+        font-weight: 500;
+        white-space: nowrap;
+        padding: 4px;
+        border-radius: 2px;
+        top: -13px;
+        right: -11px;
+        font-size: 13px;
+      }
+
+      .n-b-w-f-body-price {
+        .n-b-w-f-price {
+          background-color: #00BCD4;
+          color: #ffffff;
+          margin-right: 10px;
+          border-radius: 12px;
+          padding: 0 8px;
+          font-size: 16px;
+        }
+      }
+
+    }
+
+    > div.n-b-w-f-left {
+      padding-left: 15px;
+      display: flex;
+      align-items: center;
+
+      .n-b-w-f-button {
+        background: #81d742 !important;
+        color: #ffffff !important;
+        padding: 3px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 25px;
+        text-decoration: none;
+        margin-right: 20px;
+
+        &:hover {
+          background: #90e743 !important;
+        }
+      }
+    }
+
+    .n-b-w-f-counter {
+      display: flex;
+      .n-b-w-f-counter-panel {
+        background-color: #fe8c00;
+        margin: 0 5px;
+        font-size: 15px;
+        border-radius: 3px;
+        color: #ffffff;
+        padding: 2px 12px;
+      }
+
+      .n-b-w-f-str {
+        background-color: #e87b00;
+        font-weight: 300;
+        padding: 0 3px;
+      }
     }
   }
 }
 
 .n-b-w-f-num-01 {
   background: #FFFFFF !important;
-  > div.n-b-w-f-right {
+  div.n-b-w-f-right {
     > div.n-b-w-f-body-per {
       position: relative;
 
@@ -103,48 +155,57 @@ div.n-b-w-f-body {
   }
 }
 
-.n-b-w-f-num-02{
-  background: #FFFFFF !important;
+.n-b-w-f-num-02 {
+  background: #fff !important;
+  div.n-b-w-f-panel-body {
+    background: #333 !important;
+  }
+  .n-b-w-f-title {
+    color: #fff;
+  }
 }
 
 .n-b-w-f-num-03 {
-  background-color: #35b6f9;
-  justify-content: center !important;
-  align-items: center;
-  >.n-b-w-f-center{
+  background-color: #fff;
+  div.n-b-w-f-panel-body {
+    background-color: #35b6f9;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .n-b-w-f-center {
     display: flex;
     align-items: center;
 
-    .n-b-w-f-title{
+    .n-b-w-f-title {
       color: #FFFFFF;
     }
-    >a{
-      >img{
+    > a {
+      > img {
         width: 60px;
         margin: 0 10px;
       }
     }
 
-    >div.n-b-w-f-title{
+    > div.n-b-w-f-title {
     }
   }
 }
 
-.n-b-w-f-num-04{
+.n-b-w-f-num-04 {
   background: #FFFFFF !important;
-  >.n-b-w-f-right{
+  .n-b-w-f-right {
 
-    >.n-b-w-f-body-img{
+    > .n-b-w-f-body-img {
       border-left: 1px solid #b9b9b9;
-      img{
+      img {
         width: 73px;
         padding-left: 10px;
       }
     }
   }
 
-  >.n-b-w-f-left{
-    #n-b-w-f-button-cancel{
+  .n-b-w-f-left {
+    #n-b-w-f-button-cancel {
       background: #f8f9fa !important;
       color: #000 !important;
       padding: 3px 10px;
@@ -157,7 +218,7 @@ div.n-b-w-f-body {
         background: #edeeef !important;
       }
     }
-    #n-b-w-f-button-ok{
+    #n-b-w-f-button-ok {
       background: #007bff !important;
       color: #ffffff !important;
       padding: 3px 10px;

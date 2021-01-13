@@ -89,7 +89,7 @@ function notification_bar_wordpress_fenix()
                 ],
                 [
                     'name' => __('عنوان', 'n_b_w_bahram_path'),
-                    'id' => 'title-product',
+                    'id' => 'title_product',
                     'type' => 'text',
                 ],
                 [
@@ -104,12 +104,12 @@ function notification_bar_wordpress_fenix()
                 ],
                 [
                     'name' => __('متن دکمه', 'n_b_w_bahram_path'),
-                    'id' => 'button-title',
+                    'id' => 'button_title',
                     'type' => 'text',
                 ],
                 [
                     'name' => __('لینک دکمه', 'n_b_w_bahram_path'),
-                    'id' => 'button-link',
+                    'id' => 'button_link',
                     'type' => 'text',
                 ],
                 [
@@ -149,7 +149,7 @@ function notification_bar_wordpress_fenix()
                 ],
                 [
                     'name' => __('لینک تایید', 'n_b_w_bahram_path'),
-                    'id' => 'ok-link',
+                    'id' => 'ok_link',
                     'type' => 'text',
                 ],
                 [

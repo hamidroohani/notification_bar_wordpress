@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name:  اعلانات پیشرفته وردپرس
+Plugin Name:  اعلانات پیشرفته سپهر وردپرس
 Plugin URI: http://fenix.ir/products/notification_bar_wordpress
 Description: افزونه ای برای اعلانات
 Version: 1.0.0
